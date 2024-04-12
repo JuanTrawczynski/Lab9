@@ -55,7 +55,10 @@ void insertRecord(struct HashType hashTable[], struct RecordType record)
     hashTable[index].head = newNode;
 }
 
-// Function to display records in the hash structure
+// display records in the hash structure
+// skip the indices which are free
+// the output will be in the format:
+// index x -> id, name, order -> id, name, order ....
 void displayRecordsInHash(struct HashType hashTable[])
 {
     int i;
